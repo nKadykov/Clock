@@ -16,14 +16,14 @@ void Clock::paintEvent(QPaintEvent*) {
     static const QPoint hourHand[4] {
         QPoint(5, 14),
         QPoint(-5, 14),
-        QPoint(-4, -71),
-        QPoint(4, -71)
+        QPoint(-4, -50),
+        QPoint(4, -50)
     };
     static const QPoint minuteHand[4] {
-        QPoint(4, 14),
-        QPoint(-5, 14),
-        QPoint(-4, -71),
-        QPoint(4, -71)
+        QPoint(3, 20),
+        QPoint(-3, 20),
+        QPoint(-4, -80),
+        QPoint(4, -80)
     };
     static const QPoint secondsHand[4] {
         QPoint(1, 14),
@@ -32,7 +32,7 @@ void Clock::paintEvent(QPaintEvent*) {
         QPoint(1, -89)
     };
 
-    const QColor hourColor(palette().color(QPalette::Text));
+    const QColor hourColor(palette().color(QPalette::Shadow));
     const QColor minuteColor(palette().color(QPalette::Text));
     const QColor secondsColor(palette().color(QPalette::Accent));
 
